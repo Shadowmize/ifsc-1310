@@ -263,3 +263,41 @@ td{
     border: 1px solid #c3c3c3;
     padding:5px;
 }
+
+#practice ol{
+    list-style-type: lower-roman;
+}
+
+#practice ul li li{
+    list-style-type: square;
+    margin-bottom: 20px;
+}
+
+#practice dl dt{
+    font-weight:bold;
+}
+
+#practice dl dd{
+    margin: 0;
+}
+
+dd + dt{
+    margin-top: 20px;
+}
+
+#practice blockquote{
+    border: 4px double #c0c0c0;
+    padding: 20px 40px;
+    margin: 40px 80px;
+    border-radius:30px 0;
+    background-color: #3b638b;
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
+}
+
+#practice blockquote cite{
+    display:block;
+    text-align:right;
+    font-size:0.5rem;
+    margin: top 1rem;
+}
