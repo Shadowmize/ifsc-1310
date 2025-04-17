@@ -188,33 +188,104 @@ aside article footer{
     display:none;
 }
 
-practice h2{
-    color:#3b638b
-    border-bottom 1px dotted #cccccc;
+#practice {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-top: 40px;
+}
+
+#practice h2 {
+    color:#3b638b;
+    border-bottom: 1px dotted #cccccc;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+#practice h3,
+#practice h4 {
+    color: #172635;
+    border-left: 5px solid #3b638b;
+    padding-left: 10px;
+    margin-top: 40px;
 }
 
 #practice a{
    color:#3b638b;
    transition:.5s;
-
-
 }
 #practice a:hover{
     text-decoration:none;
 }
 
+#practice ol,
+#practice ul {
+    margin-left: 40px;
+    padding-left: 20px;
+}
 
+#practice ol {
+    list-style-type: lower-roman;
+}
 
+#practice ol li,
+#practice ul li {
+    margin-bottom: 10px;
+}
 
+#practice ul li ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    list-style-type: square;
+}
 
+#practice dl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+#practice dl dt{
+    font-weight:bold;
+    color: #3b638b;
+    margin-top: 20px;
+}
 
+#practice dl dd{
+    margin-left: 0;
+    color: #333;
+}
 
+dd + dt{
+    margin-top: 20px;
+}
 
+#practice blockquote{
+    border: 4px double #c0c0c0;
+    padding: 20px 40px;
+    margin: 40px 80px;
+    border-radius:30px 0;
+    background-color: #3b638b;
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
+    font-style: italic;
+}
 
-
-
-
+#practice blockquote cite{
+    display:block;
+    text-align:right;
+    font-size:0.75rem;
+    margin-top: 1rem;
+    font-style: normal;
+    color: #e0e0e0;
+}
 
 @media screen and (max-width:440px){
    nav.primary ul{
@@ -273,18 +344,6 @@ td{
     margin-bottom: 20px;
 }
 
-#practice dl dt{
-    font-weight:bold;
-}
-
-#practice dl dd{
-    margin: 0;
-}
-
-dd + dt{
-    margin-top: 20px;
-}
-
 #practice blockquote{
     border: 4px double #c0c0c0;
     padding: 20px 40px;
@@ -293,11 +352,23 @@ dd + dt{
     background-color: #3b638b;
     color: #ffffff;
     text-shadow: 1px 1px #000;
+    font-style: italic;
 }
 
 #practice blockquote cite{
     display:block;
     text-align:right;
-    font-size:0.5rem;
-    margin: top 1rem;
+    font-size:0.75rem;
+    margin-top: 1rem;
+    font-style: normal;
+    color: #e0e0e0;
+}
+
+footer#colophon {
+    background: #172635;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 0.75rem;
 }
